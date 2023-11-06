@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1842AB552AEFC1C700890EDC /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 1842AB542AEFC1C700890EDC /* main.c */; };
+		18DA891A2AF8BB13003C8113 /* codegen.c in Sources */ = {isa = PBXBuildFile; fileRef = 18DA89162AF8BB13003C8113 /* codegen.c */; };
+		18DA891B2AF8BB13003C8113 /* parse.c in Sources */ = {isa = PBXBuildFile; fileRef = 18DA89182AF8BB13003C8113 /* parse.c */; };
+		18DA891C2AF8BB13003C8113 /* tokenize.c in Sources */ = {isa = PBXBuildFile; fileRef = 18DA89192AF8BB13003C8113 /* tokenize.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,10 @@
 /* Begin PBXFileReference section */
 		1842AB512AEFC1C700890EDC /* chibicc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = chibicc; sourceTree = BUILT_PRODUCTS_DIR; };
 		1842AB542AEFC1C700890EDC /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		18DA89162AF8BB13003C8113 /* codegen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = codegen.c; sourceTree = "<group>"; };
+		18DA89172AF8BB13003C8113 /* chibicc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chibicc.h; sourceTree = "<group>"; };
+		18DA89182AF8BB13003C8113 /* parse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parse.c; sourceTree = "<group>"; };
+		18DA89192AF8BB13003C8113 /* tokenize.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tokenize.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +64,11 @@
 		1842AB532AEFC1C700890EDC /* chibicc */ = {
 			isa = PBXGroup;
 			children = (
+				18DA89172AF8BB13003C8113 /* chibicc.h */,
+				18DA89162AF8BB13003C8113 /* codegen.c */,
 				1842AB542AEFC1C700890EDC /* main.c */,
+				18DA89182AF8BB13003C8113 /* parse.c */,
+				18DA89192AF8BB13003C8113 /* tokenize.c */,
 			);
 			path = chibicc;
 			sourceTree = "<group>";
@@ -119,7 +130,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18DA891C2AF8BB13003C8113 /* tokenize.c in Sources */,
+				18DA891B2AF8BB13003C8113 /* parse.c in Sources */,
 				1842AB552AEFC1C700890EDC /* main.c in Sources */,
+				18DA891A2AF8BB13003C8113 /* codegen.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
